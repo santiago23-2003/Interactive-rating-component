@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <!-- Link de css -->
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/index.css">
+  
+  <title>Frontend Mentor | Interactive rating component</title>
+
+</head>
+<body>
+  <div class="container w-100 h-100 d-flex align-items-center justify-content-center">
+    <div class="col-12 col-sm-4 card p-4 py-sm-4">
+      <div class="tarjetaUno">
+        <!-- Logo de estrella -->
+        <div class="star">
+          <img src="./images/icon-star.svg" alt="icon star">
+        </div>
+
+        <!-- Texto -->
+        <div class="row">
+          <div class="col-12">
+            <h1 class="text-light title mt-5">How did we do ?</h1>
+            <p class="mt-1 mb-4 text-light parrafo">Please let us know how we did with your 
+              support request. All feedback is appreciated to help us 
+            improve our offering!</p>
+          </div>
+        </div>
+
+        <!-- Botones de la tarjeta -->
+        <div class="row">
+          <div class="col-12">
+            <div class="nav d-flex justify-content-between">
+              <div class="nav-item rounded-circle p-1 p-sm-2">
+                <div class="nav-link" href="#">1</div>
+              </div>
+              <div class="nav-item rounded-circle p-1 p-sm-2">
+                <div class="nav-link" href="#">2</div>
+              </div>
+              <div class="nav-item rounded-circle p-1 p-sm-2">
+                <div class="nav-link" href="#">3</div>
+              </div>
+              <div class="nav-item rounded-circle p-1 p-sm-2">
+                <div class="nav-link" href="#">4</div>
+              </div>
+              <div class="nav-item rounded-circle p-1 p-sm-2">
+                <div class="nav-link" href="#">5</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Boton De Submit -->
+        <div class="row">
+          <div class="col-12">
+            <button value="submit" type="submit" class="w-100 enviar rounded-pill">SUBMIT</button>
+          </div>
+        </div>
+      </div>
+      <div class="tarjetaDos ocultar">
+        <!-- imagen next -->
+        <div class="imagen d-flex justify-content-center pt-4">
+          <img src="./images/illustration-thank-you.svg" alt="ilustracion">
+        </div>
+
+        <!-- Texto -->
+        <div class="row d-flex flex-column align-items-center">
+          <div class="col-8 col-sm-7">
+            <!-- Texto informativo de la seleccion -->
+            <div class="selected text-center">
+              <p class="rounded-pill pt-1 my-4">You selected <span class="score"> 4</span> out of 5</p>
+              <h1 class="text-light">Thank you!</h1>              
+            </div>
+          </div>
+        </div>
+
+        <div class="row d-flex justify-content-center">
+          <div class="col-10 text-center">
+            <p class="gracias">We appreciate you taking the time to give a rating. If you ever need more support, 
+              don’t hesitate to get in touch!</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <script src="./JavaScript/index.js"></script>
+</body>
+</html>
